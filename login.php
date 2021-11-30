@@ -50,11 +50,11 @@
 <body class="jumbotron">
 
     <div class="container">
-      <a href="register.php" class="btn btn-primary pull-right">Register</a>
-      <a href="index.php" class="btn btn-primary ">Home</a>
+      <a href="register.php" class="btn btn-primary float-right">Register</a>
+      <a href="index.php" class="btn btn-primary">Home</a>
       <h2 class="text-center">User Login</h2>
       <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-md-4 offset-md-4">
           <form class="" action="" method="POST">
             <div class="">
               <input type="email" name="email" value="" placeholder="Email" class="form-control" required>

@@ -6,13 +6,16 @@
 <div class="col-sm-9">
   <div class="content">
     <h1 class="text-primary"><i class="fas fa-users"></i> All Users</h1>
-    <ol class="breadcrumb">
-      <li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard </li>
-      <li class=""><i class="fas fa-users"></i> All Users </li>
-    </ol>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a href="admin.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li class="breadcrumb-item"><a class="text-secondary" href="allusers.php"><i class="fas fa-pencil-square"></i> All Users Information </a></li>
+      </ol>
+    </nav>
 
     <div class="table-responsive">
-      <table class="table table-bordered table-hover">
+      <table id="table_idd" class="table table-bordered table-hover">
         <thead>
           <tr>
             <th>ID</th>
@@ -31,7 +34,7 @@
                 <td><?php echo $row['id'];?></td>
                 <td><?php echo $row['name'];?></td>
                 <td><?php echo $row['email'];?></td>
-                <td><img width="100px" src="../images/users/<?php echo $row['photo'];?>"</td>
+                <td><img width="50px" src="../images/users/<?php echo $row['photo'];?>"</td>
                 <td><?php echo date('d-M-Y',strtotime($row['date_time']));?></td>
               </tr>
               <?php

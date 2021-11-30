@@ -81,6 +81,8 @@
       <div class="row">
         <div class="">
           <?php if(isset($success)){ echo '<p class="alert alert-success col-sm-4 col-sm-offset-4">'.$success.'</p>';} ?>
+        </div>
+        <div class="">
           <?php if(isset($error)){ echo '<p class="alert alert-danger col-sm-4 col-sm-offset-4">'.$error.'</p>';} ?>
         </div>
       </div>
