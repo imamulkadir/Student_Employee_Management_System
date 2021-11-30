@@ -38,9 +38,9 @@
           $row = mysqli_fetch_assoc($result);
           ?>
           <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
+            <div class="align-self-center">
               <div class="table-responsive">
-                <table class="table table-bordered table-hover">
+                <table class="table table-hover">
                   <tr>
                     <th>Photo</th>
                     <td> <img src="images/students/<?= $row['photo'];?>" width="100px"alt=""> </td>
@@ -75,7 +75,7 @@
                   </tr>
                 </table>
               </div>
-              <a href="index.php" class="btn btn-primary btn-sm pull-right">Refresh</a>
+              <a href="index.php" class="btn btn-primary btn-sm">Refresh</a>
             </div>
           </div>
           <?php

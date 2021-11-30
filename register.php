@@ -68,6 +68,7 @@
     <title>KPGPS</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -75,8 +76,11 @@
 <body class="jumbotron">
 
     <div class="container">
-      <a href="login.php" class="btn btn-primary pull-right">Login</a>
-      <a href="index.php" class="btn btn-primary ">Home</a>
+
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2"><a href="login.php" class="btn btn-primary pull-right">Login</a></div>
+        <div class="p-2"><a href="index.php" class="btn btn-primary">Home</a></div>
+      </div>
 
       <div class="row">
         <div class="">
@@ -90,47 +94,47 @@
       <h2 class="text-center">User Registration</h2>
       <div class="row">
         <div class="col-md-12 col-md-offset-3">
-          <form class="form-horizontal" enctype="multipart/form-data" action="" method="POST">
-            <div class="form-group">
-              <label class="control-label col-sm-1">Name</label>
-              <div class="col-sm-4">
+          <form class="" enctype="multipart/form-data" action="" method="POST">
+            <div class="form-group row">
+              <label class="col-sm-1 col-form-label">Name</label>
+              <div class="col-sm-3 ">
                 <input type="text" name="name" value="" placeholder="Name" class="form-control" >
                 <span class="error"><?php if(isset($name_error)){ echo $name_error;} ?></span>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-sm-1">Email</label>
-              <div class="col-sm-4">
+            <div class="form-group row">
+              <label class="col-sm-1 col-form-label">Email</label>
+              <div class="col-sm-3">
                 <input type="email" name="email" value="" placeholder="Email" class="form-control">
                 <span class="error"><?php if(isset($email_error)){ echo $email_error;} ?></span>
                 <span class="error"><?php if(isset($email_exist)){ echo $email_exist;} ?></span>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-sm-1">Password</label>
-              <div class="col-sm-4">
+            <div class="form-group row">
+              <label class="col-sm-1 col-form-label">Password</label>
+              <div class="col-sm-3">
                 <input type="password" name="password" value="" placeholder="Password" class="form-control">
                 <span class="error"><?php if(isset($pass_error)){ echo $pass_error;} ?></span>
                 <span class="error"><?php if(isset($pass_length)){ echo $pass_length;} ?></span>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group row">
               <label class="control-label col-sm-1">Confirm Password</label>
-              <div class="col-sm-4">
+              <div class="col-sm-3">
                 <input type="password" name="c_password" value="" placeholder="Confirm password" class="form-control" >
                 <span class="error"><?php if(isset($c_pass_error)){ echo $c_pass_error;} ?></span>
                 <span class="error"><?php if(isset($pass_match)){ echo $pass_match;} ?></span>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group row">
               <label class="control-label col-sm-1">Photo</label>
               <div class="col-sm-4">
                 <input type="file" name="photo" value="">
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group row">
               <div class="col-sm-4">
-                <input type="submit" name="register" value="Register" class="btn btn-primary pull-right">
+                <input type="submit" name="register" value="Register" class="btn btn-primary float-right">
               </div>
             </div>
           </form>

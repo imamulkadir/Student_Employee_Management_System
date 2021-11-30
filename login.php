@@ -44,17 +44,21 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body class="jumbotron">
 
     <div class="container">
-      <a href="register.php" class="btn btn-primary float-right">Register</a>
-      <a href="index.php" class="btn btn-primary">Home</a>
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2"><a href="register.php" class="btn btn-primary float-right">Register</a></div>
+        <div class="p-2"><a href="index.php" class="btn btn-primary">Home</a></div>
+      </div>
+
       <h2 class="text-center">User Login</h2>
       <div class="row">
-        <div class="col-md-4 offset-md-4">
+        <div class="align-self-center">
           <form class="" action="" method="POST">
             <div class="">
               <input type="email" name="email" value="" placeholder="Email" class="form-control" required>

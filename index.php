@@ -9,15 +9,25 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
 </head>
 <body class="jumbotron">
 
     <div class="container">
-      <a href="register.php" class="btn btn-primary pull-right">Register</a>
-      <a href="login.php" class="btn btn-primary pull-right">Login</a>
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2"><a href="login.php" class="btn btn-primary pull-right">Login</a></div>
+        <div class="p-2"><a href="register.php" class="btn btn-primary pull-right">Register</a></div>
+      </div>
+
       <h2 class="text-center">Kalika Prashad Government Primary School</h2>
+
+
+
+
       <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="align-self-center">
           <form class="" action="showInfo.php" method="POST">
             <table class="table table-bordered">
               <tr>
