@@ -52,16 +52,16 @@
     <div class="row">
       <div class="col-md-12 col-md-offset-3">
         <form class="form-horizontal" enctype="multipart/form-data" action="" method="POST">
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Roll</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="text" name="roll" value="" placeholder="Roll" class="form-control" pattern="[0-9]{3}">
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Class</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <select class="form-control" name="class" required>
                 <option value="">Select</option>
                 <option value="Class One">Class One</option>
@@ -73,51 +73,51 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Name</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="text" name="name" value="" placeholder="Name" class="form-control" required>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Father's Name</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="text" name="fname" value="" placeholder="Father's Name" class="form-control" required>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Mother's Name</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="text" name="mname" value="" placeholder="Mother's Name" class="form-control" required>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Address</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="text" name="address" value="" placeholder="Address" class="form-control" required>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Phone</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="number" name="phone" value="" placeholder="01*********" class="form-control" pattern="[0-9]{11}" required>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <label class="control-label col-sm-1">Photo</label>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
               <input type="file" name="photo" value="" required>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group row">
             <div class="col-sm-4">
-              <input type="submit" name="addStudent" value="Add" class="btn btn-primary pull-right">
+              <input type="submit" name="addStudent" value="Add" class="btn btn-primary float-right">
             </div>
           </div>
         </form>
